@@ -11,43 +11,43 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Social Icons */}
-          <div className="hidden md:flex items-center gap-4">
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-              <MessageCircle size={20} />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-              <Instagram size={20} />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-              <Facebook size={20} />
-            </a>
-            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-              <Twitter size={20} />
-            </a>
-          </div>
-
-          {/* Navigation Menu */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors font-medium">
-              عن المنصة
-            </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-primary transition-colors font-medium">
-              اتصل بنا
-            </Link>
-            <Link to="/properties" className="text-gray-700 hover:text-primary transition-colors font-medium">
-              جميع العقارات
-            </Link>
-            <Link to="/" className="text-gray-700 hover:text-primary transition-colors font-medium">
-              الرئيسية
-            </Link>
-          </nav>
-
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="bg-primary text-white px-4 py-2 rounded-lg font-bold text-lg">
               دار الإيجار
             </Link>
+          </div>
+
+          {/* Navigation Menu */}
+          <nav className="hidden md:flex items-center gap-8">
+            <Link to="/" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              الرئيسية
+            </Link>
+            <Link to="/properties" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              جميع العقارات
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              اتصل بنا
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              عن المنصة
+            </Link>
+          </nav>
+
+          {/* Social Icons */}
+          <div className="hidden md:flex items-center gap-4">
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+              <Twitter size={20} />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+              <Facebook size={20} />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+              <Instagram size={20} />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+              <MessageCircle size={20} />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
